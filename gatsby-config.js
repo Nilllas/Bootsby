@@ -5,8 +5,8 @@
  */
 
  //bootstrap
- import 'bootstrap/dist/css/bootstrap.css'
- 
+ //import 'node_modules/bootstrap/dist/css/bootstrap.css';
+
 module.exports = {
   /* Your site config here */
   plugins: [],
