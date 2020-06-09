@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import '../css/bootstrap.css'
 import '../css/bootstrap.min.css'
 import "../css/bootstrap-responsive.css"
+
 export default function Home() {
     return (
       <>
@@ -21,30 +22,33 @@ export default function Home() {
           <link rel="apple-touch-icon-precomposed" href="https://kristopolous.github.io/BOOTSTRA.386/assets/ico/apple-touch-icon-57-precomposed.png" />
           <link rel="shortcut icon" href="https://kristopolous.github.io/BOOTSTRA.386/assets/ico/favicon.png" />
         </Helmet>
-        <header>
-        <Link to="/" className="brand-color logo-text">
-          Taylor's Tidy Trees
-        </Link>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/who">Who We Are</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        
+      <div className="navbar navbar-inverse navbar-fixed-top">
+      <div className="navbar-inner">
+        <div className="container">
+          <button type="button" className="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </button>
+          <Link to="/" className="brand">Sigm&amp;.io</Link>
+          <div className="nav-collapse collapse" style={{height: '0px'}}>
+            <ul className="nav">
+              <li className="active"><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+ 
+        
       <main>
-         <div>Hello world!</div>
+         <h1>Hello world!</h1>
+         <h2>Welcome hooman</h2>
       </main>
+      
       </>
 
     )
