@@ -10,17 +10,18 @@ export default function Home() {
       <h1>Hello world!</h1>
          <h2>Welcome hooman</h2>
          <p>testing this weird text</p>
-      <p></p>
-      <div>
-        <ul className="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-      <li><a tabindex="-1" href="/">Action</a></li>
-      <li><a tabindex="-1" href="/">Another action</a></li>
-      <li><a tabindex="-1" href="/">Something else here</a></li>
-      <li className="divider"></li>
-      <li><a tabindex="-1" href="/">Separated link</a></li>
-    </ul>
+         <div class="container">
+  <p></p>
+  <h2>Simple Collapsible</h2>
+  <p>Click on the button to toggle between showing and hiding content.</p>
+  <button type="button" className="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" className="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
 </div>
-
+      
       </Layout>
 
     );
